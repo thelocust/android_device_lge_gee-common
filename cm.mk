@@ -23,8 +23,12 @@ PRODUCT_RELEASE_NAME := mako
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit device configuration
-$(call inherit-product, device/lge/mako/full_mako.mk)
+$(call inherit-product, device/lge/mako/device.mk)
+$(call inherit-product-if-exists, vendor/lge/mako/device-vendor.mk)
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 768
@@ -34,7 +38,7 @@ PRODUCT_NAME := cm_mako
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
-#PRODUCT_RESTRICT_VENDOR_FILES := false
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
 #Set build fingerprint / ID / Prduct Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam TARGET_DEVICE=mako BUILD_FINGERPRINT=google/occam/mako:4.2/JOP40C/527662:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.2 JOP40C 527662 release-keys"
