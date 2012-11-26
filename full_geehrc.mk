@@ -23,8 +23,8 @@ PRODUCT_COPY_FILES := device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-PRODUCT_DEVICE := cm_geehrc
-PRODUCT_NAME := cm_geehrc
+PRODUCT_DEVICE := geehrc
+PRODUCT_NAME := full_geehrc
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := geehrc4g
 PRODUCT_MANUFACTURER := LGE
