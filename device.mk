@@ -42,10 +42,10 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
-LOCAL_KERNEL := device/lge/mako-kernel/kernel
+#LOCAL_KERNEL := device/lge/mako-kernel/kernel
 
-PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+#PRODUCT_COPY_FILES := \
+#	$(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
 	device/lge/geehrc/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
@@ -61,6 +61,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	device/lge/geehrc/init.geehrc.rc:root/init.geehrc.rc \
+	device/lge/geehrc/init.qcom.usb.sh:root/init.qcom.usb.sh \
+	device/lge/geehrc/init.qcom.usb.rc:root/init.qcom.usb.rc \
+	device/lge/geehrc/init.qcom.sh:root/init.qcom.sh \
+	device/lge/geehrc/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
+	device/lge/geehrc/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
+	device/lge/geehrc/firmware-links.sh:root/firmware-links.sh \
 	device/lge/geehrc/init.geehrc.usb.rc:root/init.geehrc.usb.rc \
 	device/lge/geehrc/fstab.geehrc:root/fstab.geehrc \
 	device/lge/geehrc/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
