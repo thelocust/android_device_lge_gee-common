@@ -296,12 +296,12 @@ service ks_checker /system/bin/sh /system/etc/kickstart_checker.sh
     class core
     oneshot
 
-# yongmin.jung@lge.com 2012.07.10 change qcks, ks, efsks into system process
-service kickstart /system/bin/qcks l
+service kickstart /system/bin/qcks -i /firmware/image/ -r /data/tombstones/mdm/
+    class core
     user system
     group system
-    #oneshot
     disabled
+    oneshot
 
 on property:persist.radio.kickstart=on
     chown system /dev/block/platform/msm_sdcc.1/by-name/*
