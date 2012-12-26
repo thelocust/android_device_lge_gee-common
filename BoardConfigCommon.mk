@@ -25,16 +25,13 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 COMMON_GLOBAL_CFLAGS += -DUSES_AUDIO_LEGACY 
 
-# QCOM hardware
-BOARD_USES_QCOM_HARDWARE := true
-
 TARGET_QCOM_DISPLAY_VARIANT := caf
 
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 TARGET_KERNEL_SOURCE := kernel/lge/gee
 TARGET_NO_BOOTLOADER := true
 
-TARGET_SPECIFIC_HEADER_PATH := device/lge/gee-common/include
+#TARGET_SPECIFIC_HEADER_PATH := device/lge/gee-common/include
 
 
 # Krait optimizations
