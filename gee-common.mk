@@ -60,7 +60,6 @@ PRODUCT_COPY_FILES += \
 	device/lge/gee-common/thermald-gee-common.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
-
 	device/lge/gee-common/init.qcom.usb.sh:root/init.qcom.usb.sh \
 	device/lge/gee-common/init.qcom.usb.rc:root/init.qcom.usb.rc \
 	device/lge/gee-common/init.qcom.sh:root/init.qcom.sh \
