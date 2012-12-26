@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL geehrc devices, and
-# are also specific to geehrc devices
+# This file includes all definitions that apply to ALL gee-common devices, and
+# are also specific to gee-common devices
 #
 # Everything in this directory will become public
 
-DEVICE_PACKAGE_OVERLAYS := device/lge/geehrc/overlay
+DEVICE_PACKAGE_OVERLAYS := device/lge/gee-common/overlay
 
 # This device is xhdpi.  However the platform doesn't
 # currently contain all of the bitmaps at xhdpi density so
@@ -48,48 +48,48 @@ PRODUCT_PACKAGES += \
 #	$(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
-	device/lge/geehrc/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
-	device/lge/geehrc/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin
+	device/lge/gee-common/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
+	device/lge/gee-common/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+	device/lge/gee-common/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
-	device/lge/geehrc/audio_policy.conf:system/etc/audio_policy.conf
+	device/lge/gee-common/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
+	device/lge/gee-common/audio_policy.conf:system/etc/audio_policy.conf
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/thermald-geehrc.conf:system/etc/thermald.conf
+	device/lge/gee-common/thermald-gee-common.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/init.geehrc.rc:root/init.geehrc.rc \
-	device/lge/geehrc/init.qcom.usb.sh:root/init.qcom.usb.sh \
-	device/lge/geehrc/init.qcom.usb.rc:root/init.qcom.usb.rc \
-	device/lge/geehrc/init.qcom.sh:root/init.qcom.sh \
-	device/lge/geehrc/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
-	device/lge/geehrc/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
-	device/lge/geehrc/firmware-links.sh:root/firmware-links.sh \
-	device/lge/geehrc/init.geehrc.usb.rc:root/init.geehrc.usb.rc \
-	device/lge/geehrc/fstab.geehrc:root/fstab.geehrc \
-	device/lge/geehrc/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
-	device/lge/geehrc/media_profiles.xml:system/etc/media_profiles.xml \
-	device/lge/geehrc/media_codecs.xml:system/etc/media_codecs.xml
+	device/lge/gee-common/init.gee-common.rc:root/init.gee-common.rc \
+	device/lge/gee-common/init.qcom.usb.sh:root/init.qcom.usb.sh \
+	device/lge/gee-common/init.qcom.usb.rc:root/init.qcom.usb.rc \
+	device/lge/gee-common/init.qcom.sh:root/init.qcom.sh \
+	device/lge/gee-common/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
+	device/lge/gee-common/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
+	device/lge/gee-common/firmware-links.sh:root/firmware-links.sh \
+	device/lge/gee-common/init.gee-common.usb.rc:root/init.gee-common.usb.rc \
+	device/lge/gee-common/fstab.gee-common:root/fstab.gee-common \
+	device/lge/gee-common/ueventd.gee-common.rc:root/ueventd.gee-common.rc \
+	device/lge/gee-common/media_profiles.xml:system/etc/media_profiles.xml \
+	device/lge/gee-common/media_codecs.xml:system/etc/media_codecs.xml
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/kickstart_checker.sh:system/etc/kickstart_checker.sh
+	device/lge/gee-common/kickstart_checker.sh:system/etc/kickstart_checker.sh
 
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
-	device/lge/geehrc/hs_detect.kl:system/usr/keylayout/hs_detect.kl \
-	device/lge/geehrc/pmic8xxx_pwrkey.kl:system/usr/keylayout/pmic8xxx_pwrkey.kl \
-	device/lge/geehrc/keypad_8064.kl:system/usr/keylayout/keypad_8064.kl \
-	device/lge/geehrc/apq8064-tabla-snd-card_Button_Jack.kcm:system/usr/keychars/apq8064-tabla-snd-card_Button_Jack.kcm \
-	device/lge/geehrc/hs_detect.kcm:system/usr/keychars/hs_detect.kcm \
-	device/lge/geehrc/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm \
-	device/lge/geehrc/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm
+	device/lge/gee-common/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
+	device/lge/gee-common/hs_detect.kl:system/usr/keylayout/hs_detect.kl \
+	device/lge/gee-common/pmic8xxx_pwrkey.kl:system/usr/keylayout/pmic8xxx_pwrkey.kl \
+	device/lge/gee-common/keypad_8064.kl:system/usr/keylayout/keypad_8064.kl \
+	device/lge/gee-common/apq8064-tabla-snd-card_Button_Jack.kcm:system/usr/keychars/apq8064-tabla-snd-card_Button_Jack.kcm \
+	device/lge/gee-common/hs_detect.kcm:system/usr/keychars/hs_detect.kcm \
+	device/lge/gee-common/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm \
+	device/lge/gee-common/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/touch_dev.idc:system/usr/idc/touch_dev.idc
+	device/lge/gee-common/touch_dev.idc:system/usr/idc/touch_dev.idc
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -111,22 +111,22 @@ PRODUCT_COPY_FILES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/gps.conf:system/etc/gps.conf
+	device/lge/gee-common/gps.conf:system/etc/gps.conf
 
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc-nci \
     libnfc_nci_jni \
-    nfc_nci.geehrc \
+    nfc_nci.gee-common \
     NfcNci \
     Tag \
     com.android.nfc_extras
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    NFCEE_ACCESS_PATH := device/lge/geehrc/nfc/nfcee_access.xml
+    NFCEE_ACCESS_PATH := device/lge/gee-common/nfc/nfcee_access.xml
 else
-    NFCEE_ACCESS_PATH := device/lge/geehrc/nfc/nfcee_access_debug.xml
+    NFCEE_ACCESS_PATH := device/lge/gee-common/nfc/nfcee_access_debug.xml
 endif
 
 # NFC access control + feature files + configuration
@@ -134,7 +134,7 @@ PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    device/lge/geehrc/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+    device/lge/gee-common/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072
@@ -196,13 +196,13 @@ PRODUCT_PACKAGES += \
 	power.msm8960
 
 PRODUCT_COPY_FILES += \
-	device/lge/geehrc/init.geehrc.bt.sh:system/etc/init.geehrc.bt.sh
+	device/lge/gee-common/init.gee-common.bt.sh:system/etc/init.gee-common.bt.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.bt.hci_transport=smd
 
 PRODUCT_PACKAGES += \
-	camera.geehrc \
+	camera.gee-common \
 	camera.msm8960 \
 	libmmcamera_interface2 \
 	libmmcamera_interface

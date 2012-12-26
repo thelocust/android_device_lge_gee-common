@@ -31,12 +31,10 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_QCOM_DISPLAY_VARIANT := caf
 
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
-TARGET_KERNEL_CONFIG := j1sp-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/gee
 TARGET_NO_BOOTLOADER := true
-#TARGET_PREBUILT_KERNEL := device/lge/geehrc/kernel
 
-TARGET_SPECIFIC_HEADER_PATH := device/lge/geehrc/include
+TARGET_SPECIFIC_HEADER_PATH := device/lge/gee-common/include
 
 
 # Krait optimizations
@@ -50,7 +48,7 @@ TARGET_KRAIT_BIONIC_PLDSIZE := 64
 
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := console=ttySHL0,115200,n8 androidboot.hardware=geehrc lpj=67677
+BOARD_KERNEL_CMDLINE := console=ttySHL0,115200,n8 androidboot.hardware=gee-common lpj=67677
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x1308000
 
 BOARD_USES_ICS_AUDIO_BLOB := true
@@ -67,10 +65,10 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8960
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno300
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
-TARGET_BOOTLOADER_NAME=geehrc
-TARGET_BOARD_INFO_FILE := device/lge/geehrc/board-info.txt
+TARGET_BOOTLOADER_NAME=gee-common
+TARGET_BOARD_INFO_FILE := device/lge/gee-common/board-info.txt
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/geehrc/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/gee-common/bluetooth
 
 # FIXME: HOSTAPD-derived wifi driver
 BOARD_HAS_QCOM_WLAN := true
@@ -83,7 +81,7 @@ BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WIFI_DRIVER_FW_PATH_AP  := "ap"
 
-BOARD_EGL_CFG := device/lge/geehrc/egl.cfg
+BOARD_EGL_CFG := device/lge/gee-common/egl.cfg
 
 
 
@@ -97,7 +95,7 @@ TARGET_USES_C2D_COMPOSITON := true
 BOARD_HAVE_OLD_ION_API := true
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_UI_LIB := librecovery_ui_geehrc
+TARGET_RECOVERY_UI_LIB := librecovery_ui_gee-common
 
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 23068672 # 22M
@@ -112,11 +110,11 @@ BOARD_USES_SECURE_SERVICES := true
 BOARD_USES_EXTRA_THERMAL_SENSOR := true
 BOARD_USES_CAMERA_FAST_AUTOFOCUS := true
 
-BOARD_LIB_DUMPSTATE := libdumpstate.geehrc
+BOARD_LIB_DUMPSTATE := libdumpstate.gee-common
 
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 TARGET_NO_RPC := true
 
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/geehrc
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/gee-common
 
--include vendor/lge/geehrc/BoardConfigVendor.mk
+-include vendor/lge/gee-common/BoardConfigVendor.mk
