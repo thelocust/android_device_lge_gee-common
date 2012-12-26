@@ -60,14 +60,13 @@ PRODUCT_COPY_FILES += \
 	device/lge/gee-common/thermald-gee-common.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
-	device/lge/gee-common/init.gee-common.rc:root/init.gee-common.rc \
+
 	device/lge/gee-common/init.qcom.usb.sh:root/init.qcom.usb.sh \
 	device/lge/gee-common/init.qcom.usb.rc:root/init.qcom.usb.rc \
 	device/lge/gee-common/init.qcom.sh:root/init.qcom.sh \
 	device/lge/gee-common/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
 	device/lge/gee-common/init.qcom.class_main.sh:root/init.qcom.class_main.sh \
 	device/lge/gee-common/firmware-links.sh:root/firmware-links.sh \
-	device/lge/gee-common/init.gee-common.usb.rc:root/init.gee-common.usb.rc \
 	device/lge/gee-common/fstab.gee-common:root/fstab.gee-common \
 	device/lge/gee-common/ueventd.gee-common.rc:root/ueventd.gee-common.rc \
 	device/lge/gee-common/media_profiles.xml:system/etc/media_profiles.xml \
