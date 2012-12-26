@@ -47,3 +47,4 @@ touch.distance.calibration = none
 touch.distance.scale = 1
 
 keyboard.layout = keypad_8064
+
