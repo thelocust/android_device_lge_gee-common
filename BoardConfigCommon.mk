@@ -63,7 +63,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno300
 TARGET_BOOTLOADER_BOARD_NAME := MSM8960
 TARGET_BOOTLOADER_NAME=geehrc
 TARGET_BOARD_INFO_FILE := device/lge/gee-common/board-info.txt
-TARGET_NO_HW_VSYNC := true
 
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/gee-common/bluetooth
 
