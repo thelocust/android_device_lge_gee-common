@@ -29,6 +29,7 @@ TARGET_QCOM_DISPLAY_VARIANT := caf
 
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 TARGET_KERNEL_SOURCE := kernel/lge/gee-common
+TARGET_NO_BOOTLOADER := true
 
 TARGET_SPECIFIC_HEADER_PATH := device/lge/gee-common/include
 
