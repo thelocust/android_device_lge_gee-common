@@ -35,7 +35,9 @@ LOCAL_SRC_FILES    := $(LOCAL_MODULE)
 LOCAL_MODULE_PATH  := $(TARGET_OUT_ETC)/wifi
 include $(BUILD_PREBUILT)
 
+
 endif
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+include $(rootdir/Android.mk)
 
